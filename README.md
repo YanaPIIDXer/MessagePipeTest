@@ -1,0 +1,2 @@
+# MessagePipeTest
+UnityのMessagePipeと言うメッセージングライブラリの実験用リポジトリ
