@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using MessagePipe;
 using Zenject;
+using UniRx;
+using System;
 
 namespace Test1
 {
@@ -16,5 +18,12 @@ namespace Test1
         /// </summary>
         [Inject]
         private IPublisher<Message> Publisher = null;
+
+        void Awake()
+        {
+            Observable.Interval(TimeSpan.FromSeconds(3.0))
+                .Subscribe((_) => Publisher.Publish(new Message("Test")))
+                .AddTo(gameObject);
+        }
     }
 }
