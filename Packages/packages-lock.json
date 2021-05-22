@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.messagepipe.zenject": {
+      "version": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.Zenject",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8024d8581abdef14a69651f12d0c430966d3d264"
+    },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
       "depth": 0,
